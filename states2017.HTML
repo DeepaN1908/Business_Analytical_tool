@@ -1,0 +1,1624 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_713618c5c24a42eb8b894f014f9b2d1f {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_713618c5c24a42eb8b894f014f9b2d1f" ></div>
+        
+</body>
+<script>    
+    
+            var map_713618c5c24a42eb8b894f014f9b2d1f = L.map(
+                "map_713618c5c24a42eb8b894f014f9b2d1f",
+                {
+                    center: [39.04460902234043, -90.06253410792796],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 5,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_5b7b5e65bc044962b205a89b7d7f744d = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_713618c5c24a42eb8b894f014f9b2d1f);
+        
+    
+            var marker_b2b44e9462af402590b90300c9a86d99 = L.marker(
+                [39.04460902234043, -90.06253410792796],
+                {}
+            ).addTo(map_713618c5c24a42eb8b894f014f9b2d1f);
+        
+    
+            var div_icon_1f9e852513b542398e5bf91e1f14c3d7 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size: 16pt; color: black\"\u003eYearly sales in the various states in 2017\u003c/div\u003e", "iconAnchor": [0, 0], "iconSize": [250, 36]});
+            marker_b2b44e9462af402590b90300c9a86d99.setIcon(div_icon_1f9e852513b542398e5bf91e1f14c3d7);
+        
+    
+            var marker_f2e56238fee4454393fc2fe041c872a9 = L.marker(
+                [33.2588817, -86.8295337],
+                {}
+            ).addTo(map_713618c5c24a42eb8b894f014f9b2d1f);
+        
+    
+            var icon_21a604c1d6e04e6b98b7a57f6d377a09 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "thumbs-up", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_f2e56238fee4454393fc2fe041c872a9.setIcon(icon_21a604c1d6e04e6b98b7a57f6d377a09);
+        
+    
+        var popup_1bcb217402644a798674a3cd7e3e2ac5 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_03c102cadb7c491e916538c0f6c082f5 = $(`<div id="html_03c102cadb7c491e916538c0f6c082f5" style="width: 100.0%; height: 100.0%;"><stong>Alabama</stong><p>Sales:1828.25</p><p>Orders:57</p><p>Profit:496.3771</p></div>`)[0];
+            popup_1bcb217402644a798674a3cd7e3e2ac5.setContent(html_03c102cadb7c491e916538c0f6c082f5);
+        
+
+        marker_f2e56238fee4454393fc2fe041c872a9.bindPopup(popup_1bcb217402644a798674a3cd7e3e2ac5)
+        ;
+
+        
+    
+    
+            marker_f2e56238fee4454393fc2fe041c872a9.bindTooltip(
+                `<div>
+                     Click Here For More Info
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6cfa201825bd44319e6820bf774879b3 = L.marker(
+                [34.395342, -111.763275],
+                {}
+            ).addTo(map_713618c5c24a42eb8b894f014f9b2d1f);
+        
+    
+            var icon_3539430913484efc997de0b4285d9a93 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "thumbs-down", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_6cfa201825bd44319e6820bf774879b3.setIcon(icon_3539430913484efc997de0b4285d9a93);
+        
+    
+        var popup_867a42b3821b4876808e5bc5e78b94e8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3989e5a842814ae0964f05dec35cc019 = $(`<div id="html_3989e5a842814ae0964f05dec35cc019" style="width: 100.0%; height: 100.0%;"><stong>Arizona</stong><p>Sales:11133.537</p><p>Orders:258</p><p>Loss:-1276.0025</p></div>`)[0];
+            popup_867a42b3821b4876808e5bc5e78b94e8.setContent(html_3989e5a842814ae0964f05dec35cc019);
+        
+
+        marker_6cfa201825bd44319e6820bf774879b3.bindPopup(popup_867a42b3821b4876808e5bc5e78b94e8)
+        ;
+
+        
+    
+    
+            marker_6cfa201825bd44319e6820bf774879b3.bindTooltip(
+                `<div>
+                     Click Here For More Info
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2c90c11a5d18432cb551b74efbbd8110 = L.marker(
+                [35.2048883, -92.4479108],
+                {}
+            ).addTo(map_713618c5c24a42eb8b894f014f9b2d1f);
+        
+    
+            var icon_5cb969acb6fd481dbd016e509221cffe = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "thumbs-up", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_2c90c11a5d18432cb551b74efbbd8110.setIcon(icon_5cb969acb6fd481dbd016e509221cffe);
+        
+    
+        var popup_b979d94ec66b41bb9bcf1cefc923b580 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7592affa81b748ddb61825c7ba78a950 = $(`<div id="html_7592affa81b748ddb61825c7ba78a950" style="width: 100.0%; height: 100.0%;"><stong>Arkansas</stong><p>Sales:2707.640000000001</p><p>Orders:78</p><p>Profit:959.4027</p></div>`)[0];
+            popup_b979d94ec66b41bb9bcf1cefc923b580.setContent(html_7592affa81b748ddb61825c7ba78a950);
+        
+
+        marker_2c90c11a5d18432cb551b74efbbd8110.bindPopup(popup_b979d94ec66b41bb9bcf1cefc923b580)
+        ;
+
+        
+    
+    
+            marker_2c90c11a5d18432cb551b74efbbd8110.bindTooltip(
+                `<div>
+                     Click Here For More Info
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_62a73af4f674428eaa319b1c7ba7f748 = L.marker(
+                [36.7014631, -118.755997],
+                {}
+            ).addTo(map_713618c5c24a42eb8b894f014f9b2d1f);
+        
+    
+            var icon_4c00aeeabdbd4dbc9ef629a632ef218b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "thumbs-up", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_62a73af4f674428eaa319b1c7ba7f748.setIcon(icon_4c00aeeabdbd4dbc9ef629a632ef218b);
+        
+    
+        var popup_a87f46cc8b3e43e9823938363cd0abf4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5086b53c205f4fc09bd7e912787ee1c7 = $(`<div id="html_5086b53c205f4fc09bd7e912787ee1c7" style="width: 100.0%; height: 100.0%;"><stong>California</stong><p>Sales:146388.3445</p><p>Orders:2633</p><p>Profit:29366.458899999998</p></div>`)[0];
+            popup_a87f46cc8b3e43e9823938363cd0abf4.setContent(html_5086b53c205f4fc09bd7e912787ee1c7);
+        
+
+        marker_62a73af4f674428eaa319b1c7ba7f748.bindPopup(popup_a87f46cc8b3e43e9823938363cd0abf4)
+        ;
+
+        
+    
+    
+            marker_62a73af4f674428eaa319b1c7ba7f748.bindTooltip(
+                `<div>
+                     Click Here For More Info
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_62714e5242274163a59c77321ff04941 = L.marker(
+                [38.7251776, -105.607716],
+                {}
+            ).addTo(map_713618c5c24a42eb8b894f014f9b2d1f);
+        
+    
+            var icon_b191f7567b10459bb9e3dadbcbac94fb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "thumbs-down", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_62714e5242274163a59c77321ff04941.setIcon(icon_b191f7567b10459bb9e3dadbcbac94fb);
+        
+    
+        var popup_c5adcd8c143b4820bbb13c10fbbedb9a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_03a800d70e604d2fb4ed410d026f2861 = $(`<div id="html_03a800d70e604d2fb4ed410d026f2861" style="width: 100.0%; height: 100.0%;"><stong>Colorado</stong><p>Sales:10299.813000000002</p><p>Orders:240</p><p>Loss:-4435.8483000000015</p></div>`)[0];
+            popup_c5adcd8c143b4820bbb13c10fbbedb9a.setContent(html_03a800d70e604d2fb4ed410d026f2861);
+        
+
+        marker_62714e5242274163a59c77321ff04941.bindPopup(popup_c5adcd8c143b4820bbb13c10fbbedb9a)
+        ;
+
+        
+    
+    
+            marker_62714e5242274163a59c77321ff04941.bindTooltip(
+                `<div>
+                     Click Here For More Info
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_31b39f721e484267b8b660f8c18fb93f = L.marker(
+                [41.6500201, -72.7342163],
+                {}
+            ).addTo(map_713618c5c24a42eb8b894f014f9b2d1f);
+        
+    
+            var icon_95f44de9e1124030bee04302c16e282a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "thumbs-up", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_31b39f721e484267b8b660f8c18fb93f.setIcon(icon_95f44de9e1124030bee04302c16e282a);
+        
+    
+        var popup_559efa17dd474c359898a5d827cb9315 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ba3ce0ea499f4f9a9ba0355a8c709125 = $(`<div id="html_ba3ce0ea499f4f9a9ba0355a8c709125" style="width: 100.0%; height: 100.0%;"><stong>Connecticut</stong><p>Sales:5307.210000000001</p><p>Orders:104</p><p>Profit:1479.7616</p></div>`)[0];
+            popup_559efa17dd474c359898a5d827cb9315.setContent(html_ba3ce0ea499f4f9a9ba0355a8c709125);
+        
+
+        marker_31b39f721e484267b8b660f8c18fb93f.bindPopup(popup_559efa17dd474c359898a5d827cb9315)
+        ;
+
+        
+    
+    
+            marker_31b39f721e484267b8b660f8c18fb93f.bindTooltip(
+                `<div>
+                     Click Here For More Info
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ea2de85acbda4503a19a247fd8f6014c = L.marker(
+                [38.6920451, -75.4013315],
+                {}
+            ).addTo(map_713618c5c24a42eb8b894f014f9b2d1f);
+        
+    
+            var icon_71d65a1ff29a4032a011728e7e981587 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "thumbs-up", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_ea2de85acbda4503a19a247fd8f6014c.setIcon(icon_71d65a1ff29a4032a011728e7e981587);
+        
+    
+        var popup_acb45448a94c40e685d43fe8bb4363d9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9e014f7159ef4632a199e375db582720 = $(`<div id="html_9e014f7159ef4632a199e375db582720" style="width: 100.0%; height: 100.0%;"><stong>Delaware</stong><p>Sales:13754.983</p><p>Orders:83</p><p>Profit:6053.2049</p></div>`)[0];
+            popup_acb45448a94c40e685d43fe8bb4363d9.setContent(html_9e014f7159ef4632a199e375db582720);
+        
+
+        marker_ea2de85acbda4503a19a247fd8f6014c.bindPopup(popup_acb45448a94c40e685d43fe8bb4363d9)
+        ;
+
+        
+    
+    
+            marker_ea2de85acbda4503a19a247fd8f6014c.bindTooltip(
+                `<div>
+                     Click Here For More Info
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3c8f82a545da4f02a95df8467d354841 = L.marker(
+                [38.89379365, -76.98799757261312],
+                {}
+            ).addTo(map_713618c5c24a42eb8b894f014f9b2d1f);
+        
+    
+            var icon_598f0fc4c3c64903bdf19310d632134d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "thumbs-up", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_3c8f82a545da4f02a95df8467d354841.setIcon(icon_598f0fc4c3c64903bdf19310d632134d);
+        
+    
+        var popup_cd2fb862b29c464985dee640b86f5833 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7b65ba68d07f4de8b3c7a4b16518bbd9 = $(`<div id="html_7b65ba68d07f4de8b3c7a4b16518bbd9" style="width: 100.0%; height: 100.0%;"><stong>District of Columbia</stong><p>Sales:77.75999999999999</p><p>Orders:8</p><p>Profit:35.064</p></div>`)[0];
+            popup_cd2fb862b29c464985dee640b86f5833.setContent(html_7b65ba68d07f4de8b3c7a4b16518bbd9);
+        
+
+        marker_3c8f82a545da4f02a95df8467d354841.bindPopup(popup_cd2fb862b29c464985dee640b86f5833)
+        ;
+
+        
+    
+    
+            marker_3c8f82a545da4f02a95df8467d354841.bindTooltip(
+                `<div>
+                     Click Here For More Info
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d18fef5bd9a848c58af233f508d078d3 = L.marker(
+                [27.7567667, -81.4639835],
+                {}
+            ).addTo(map_713618c5c24a42eb8b894f014f9b2d1f);
+        
+    
+            var icon_7dd16b3c757941b2b33baae9ee08ef4e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "thumbs-up", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_d18fef5bd9a848c58af233f508d078d3.setIcon(icon_7dd16b3c757941b2b33baae9ee08ef4e);
+        
+    
+        var popup_2284fd3095714b538c4c682b99b0b275 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7bb3e25198b34c3e84c46afed7dd1c47 = $(`<div id="html_7bb3e25198b34c3e84c46afed7dd1c47" style="width: 100.0%; height: 100.0%;"><stong>Florida</stong><p>Sales:26444.7155</p><p>Orders:414</p><p>Profit:244.12659999999914</p></div>`)[0];
+            popup_2284fd3095714b538c4c682b99b0b275.setContent(html_7bb3e25198b34c3e84c46afed7dd1c47);
+        
+
+        marker_d18fef5bd9a848c58af233f508d078d3.bindPopup(popup_2284fd3095714b538c4c682b99b0b275)
+        ;
+
+        
+    
+    
+            marker_d18fef5bd9a848c58af233f508d078d3.bindTooltip(
+                `<div>
+                     Click Here For More Info
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_67e0e464da584d3b974e3372ebaba6d7 = L.marker(
+                [32.3293809, -83.1137366],
+                {}
+            ).addTo(map_713618c5c24a42eb8b894f014f9b2d1f);
+        
+    
+            var icon_1d8563c77254499ea2412bb1160e60e3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "thumbs-up", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_67e0e464da584d3b974e3372ebaba6d7.setIcon(icon_1d8563c77254499ea2412bb1160e60e3);
+        
+    
+        var popup_502214797a644ce1a19be9c2039e4e40 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_90985abf207c4afea6b8ce900fc8974a = $(`<div id="html_90985abf207c4afea6b8ce900fc8974a" style="width: 100.0%; height: 100.0%;"><stong>Georgia</stong><p>Sales:19160.019999999993</p><p>Orders:235</p><p>Profit:6447.981899999999</p></div>`)[0];
+            popup_502214797a644ce1a19be9c2039e4e40.setContent(html_90985abf207c4afea6b8ce900fc8974a);
+        
+
+        marker_67e0e464da584d3b974e3372ebaba6d7.bindPopup(popup_502214797a644ce1a19be9c2039e4e40)
+        ;
+
+        
+    
+    
+            marker_67e0e464da584d3b974e3372ebaba6d7.bindTooltip(
+                `<div>
+                     Click Here For More Info
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_85890d3e7a9141cf835a385a1f57e11b = L.marker(
+                [43.6447642, -114.015407],
+                {}
+            ).addTo(map_713618c5c24a42eb8b894f014f9b2d1f);
+        
+    
+            var icon_41a3db6079754d1db91bcc472ba84a1d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "thumbs-up", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_85890d3e7a9141cf835a385a1f57e11b.setIcon(icon_41a3db6079754d1db91bcc472ba84a1d);
+        
+    
+        var popup_63542bf59b9f4855a4d0dc1f89015f62 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8b0d7739ac7f4c32a94d7d5ec2ae4a75 = $(`<div id="html_8b0d7739ac7f4c32a94d7d5ec2ae4a75" style="width: 100.0%; height: 100.0%;"><stong>Idaho</stong><p>Sales:1233.548</p><p>Orders:26</p><p>Profit:199.00859999999994</p></div>`)[0];
+            popup_63542bf59b9f4855a4d0dc1f89015f62.setContent(html_8b0d7739ac7f4c32a94d7d5ec2ae4a75);
+        
+
+        marker_85890d3e7a9141cf835a385a1f57e11b.bindPopup(popup_63542bf59b9f4855a4d0dc1f89015f62)
+        ;
+
+        
+    
+    
+            marker_85890d3e7a9141cf835a385a1f57e11b.bindTooltip(
+                `<div>
+                     Click Here For More Info
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_924ec941c6be4151937ff514a29da53a = L.marker(
+                [40.0796606, -89.4337288],
+                {}
+            ).addTo(map_713618c5c24a42eb8b894f014f9b2d1f);
+        
+    
+            var icon_92c7d7c0c7be4981a16fc305803241fe = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "thumbs-down", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_924ec941c6be4151937ff514a29da53a.setIcon(icon_92c7d7c0c7be4981a16fc305803241fe);
+        
+    
+        var popup_289fe1752fc5455fa305e92ce6f34bd2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ec7f895156374347aa558fe6143bd713 = $(`<div id="html_ec7f895156374347aa558fe6143bd713" style="width: 100.0%; height: 100.0%;"><stong>Illinois</stong><p>Sales:24351.611</p><p>Orders:632</p><p>Loss:-6745.560000000001</p></div>`)[0];
+            popup_289fe1752fc5455fa305e92ce6f34bd2.setContent(html_ec7f895156374347aa558fe6143bd713);
+        
+
+        marker_924ec941c6be4151937ff514a29da53a.bindPopup(popup_289fe1752fc5455fa305e92ce6f34bd2)
+        ;
+
+        
+    
+    
+            marker_924ec941c6be4151937ff514a29da53a.bindTooltip(
+                `<div>
+                     Click Here For More Info
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_66d74416ea2f4d9daa8d1e65281d9bab = L.marker(
+                [40.3270127, -86.1746933],
+                {}
+            ).addTo(map_713618c5c24a42eb8b894f014f9b2d1f);
+        
+    
+            var icon_f934ac2dbc0e46b49c64062b5161a102 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "thumbs-up", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_66d74416ea2f4d9daa8d1e65281d9bab.setIcon(icon_f934ac2dbc0e46b49c64062b5161a102);
+        
+    
+        var popup_2be47c238ce14eb48853f87a4108e200 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0005120aefd24a508c7d68d9d982a80a = $(`<div id="html_0005120aefd24a508c7d68d9d982a80a" style="width: 100.0%; height: 100.0%;"><stong>Indiana</stong><p>Sales:18516.45</p><p>Orders:229</p><p>Profit:5139.525699999998</p></div>`)[0];
+            popup_2be47c238ce14eb48853f87a4108e200.setContent(html_0005120aefd24a508c7d68d9d982a80a);
+        
+
+        marker_66d74416ea2f4d9daa8d1e65281d9bab.bindPopup(popup_2be47c238ce14eb48853f87a4108e200)
+        ;
+
+        
+    
+    
+            marker_66d74416ea2f4d9daa8d1e65281d9bab.bindTooltip(
+                `<div>
+                     Click Here For More Info
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_fdef7a07f005476ea095dde152f9f55d = L.marker(
+                [41.9216734, -93.3122705],
+                {}
+            ).addTo(map_713618c5c24a42eb8b894f014f9b2d1f);
+        
+    
+            var icon_a6f2624d9ae24f629f73b153d91a14db = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "thumbs-up", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_fdef7a07f005476ea095dde152f9f55d.setIcon(icon_a6f2624d9ae24f629f73b153d91a14db);
+        
+    
+        var popup_d05c9b31031649b281c55db49054d9a4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_58114e07a4b24885bd1e7addb09ba9ad = $(`<div id="html_58114e07a4b24885bd1e7addb09ba9ad" style="width: 100.0%; height: 100.0%;"><stong>Iowa</stong><p>Sales:716.41</p><p>Orders:51</p><p>Profit:275.86379999999997</p></div>`)[0];
+            popup_d05c9b31031649b281c55db49054d9a4.setContent(html_58114e07a4b24885bd1e7addb09ba9ad);
+        
+
+        marker_fdef7a07f005476ea095dde152f9f55d.bindPopup(popup_d05c9b31031649b281c55db49054d9a4)
+        ;
+
+        
+    
+    
+            marker_fdef7a07f005476ea095dde152f9f55d.bindTooltip(
+                `<div>
+                     Click Here For More Info
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4dda1955897c44dfa0e3a7852419db9a = L.marker(
+                [38.27312, -98.5821872],
+                {}
+            ).addTo(map_713618c5c24a42eb8b894f014f9b2d1f);
+        
+    
+            var icon_0db09e2b791444de99d94430cae6ad33 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "thumbs-up", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_4dda1955897c44dfa0e3a7852419db9a.setIcon(icon_0db09e2b791444de99d94430cae6ad33);
+        
+    
+        var popup_b634af8e7669403f9255a4a6c1cf027e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1bf1a6fa635448c98773a120296546b9 = $(`<div id="html_1bf1a6fa635448c98773a120296546b9" style="width: 100.0%; height: 100.0%;"><stong>Kansas</stong><p>Sales:733.1499999999999</p><p>Orders:19</p><p>Profit:263.3644</p></div>`)[0];
+            popup_b634af8e7669403f9255a4a6c1cf027e.setContent(html_1bf1a6fa635448c98773a120296546b9);
+        
+
+        marker_4dda1955897c44dfa0e3a7852419db9a.bindPopup(popup_b634af8e7669403f9255a4a6c1cf027e)
+        ;
+
+        
+    
+    
+            marker_4dda1955897c44dfa0e3a7852419db9a.bindTooltip(
+                `<div>
+                     Click Here For More Info
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_efc0411a3a1d4b41b08e7c26d703eebe = L.marker(
+                [37.5726028, -85.1551411],
+                {}
+            ).addTo(map_713618c5c24a42eb8b894f014f9b2d1f);
+        
+    
+            var icon_e32dd0238e7249cb8c6584889cf69a28 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "thumbs-up", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_efc0411a3a1d4b41b08e7c26d703eebe.setIcon(icon_e32dd0238e7249cb8c6584889cf69a28);
+        
+    
+        var popup_17e3a497810c4b49bee664e42378974d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6dff1c0f07ee475d8cd919453af85479 = $(`<div id="html_6dff1c0f07ee475d8cd919453af85479" style="width: 100.0%; height: 100.0%;"><stong>Kentucky</stong><p>Sales:15534.839999999998</p><p>Orders:186</p><p>Profit:4751.721399999999</p></div>`)[0];
+            popup_17e3a497810c4b49bee664e42378974d.setContent(html_6dff1c0f07ee475d8cd919453af85479);
+        
+
+        marker_efc0411a3a1d4b41b08e7c26d703eebe.bindPopup(popup_17e3a497810c4b49bee664e42378974d)
+        ;
+
+        
+    
+    
+            marker_efc0411a3a1d4b41b08e7c26d703eebe.bindTooltip(
+                `<div>
+                     Click Here For More Info
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_55b6c6b90e08466f8383b9082a087a2a = L.marker(
+                [30.8703881, -92.007126],
+                {}
+            ).addTo(map_713618c5c24a42eb8b894f014f9b2d1f);
+        
+    
+            var icon_d194f0f737ff49ba80f1ec672a65b5d1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "thumbs-up", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_55b6c6b90e08466f8383b9082a087a2a.setIcon(icon_d194f0f737ff49ba80f1ec672a65b5d1);
+        
+    
+        var popup_34a4faf723c5461a91d9799c19238678 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9ccd8720bc76404e9146d1410271fed4 = $(`<div id="html_9ccd8720bc76404e9146d1410271fed4" style="width: 100.0%; height: 100.0%;"><stong>Louisiana</stong><p>Sales:5501.549999999999</p><p>Orders:50</p><p>Profit:1212.9041</p></div>`)[0];
+            popup_34a4faf723c5461a91d9799c19238678.setContent(html_9ccd8720bc76404e9146d1410271fed4);
+        
+
+        marker_55b6c6b90e08466f8383b9082a087a2a.bindPopup(popup_34a4faf723c5461a91d9799c19238678)
+        ;
+
+        
+    
+    
+            marker_55b6c6b90e08466f8383b9082a087a2a.bindTooltip(
+                `<div>
+                     Click Here For More Info
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d0aac8bfbe894578b3c5cd753500b844 = L.marker(
+                [39.5162234, -76.9382069],
+                {}
+            ).addTo(map_713618c5c24a42eb8b894f014f9b2d1f);
+        
+    
+            var icon_98305e1a52cf4f669a841c1fbd749934 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "thumbs-up", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_d0aac8bfbe894578b3c5cd753500b844.setIcon(icon_98305e1a52cf4f669a841c1fbd749934);
+        
+    
+        var popup_14abc5d6eaf84b0085ae5514da1174c5 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_772bb1168d524ee9b7a30f90a51e1c0b = $(`<div id="html_772bb1168d524ee9b7a30f90a51e1c0b" style="width: 100.0%; height: 100.0%;"><stong>Maryland</stong><p>Sales:9451.599999999999</p><p>Orders:156</p><p>Profit:2780.6069999999995</p></div>`)[0];
+            popup_14abc5d6eaf84b0085ae5514da1174c5.setContent(html_772bb1168d524ee9b7a30f90a51e1c0b);
+        
+
+        marker_d0aac8bfbe894578b3c5cd753500b844.bindPopup(popup_14abc5d6eaf84b0085ae5514da1174c5)
+        ;
+
+        
+    
+    
+            marker_d0aac8bfbe894578b3c5cd753500b844.bindTooltip(
+                `<div>
+                     Click Here For More Info
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2926e7d3215348b98adaa123c1d818c5 = L.marker(
+                [42.3788774, -72.032366],
+                {}
+            ).addTo(map_713618c5c24a42eb8b894f014f9b2d1f);
+        
+    
+            var icon_66426bc73f94461f942aff1ef17dbf64 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "thumbs-up", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_2926e7d3215348b98adaa123c1d818c5.setIcon(icon_66426bc73f94461f942aff1ef17dbf64);
+        
+    
+        var popup_519bb1c19e154b59818dd8a09b62685c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0f8bf691ad9f4e3985567e845e354c14 = $(`<div id="html_0f8bf691ad9f4e3985567e845e354c14" style="width: 100.0%; height: 100.0%;"><stong>Massachusetts</stong><p>Sales:8143.076000000002</p><p>Orders:137</p><p>Profit:1710.5868999999996</p></div>`)[0];
+            popup_519bb1c19e154b59818dd8a09b62685c.setContent(html_0f8bf691ad9f4e3985567e845e354c14);
+        
+
+        marker_2926e7d3215348b98adaa123c1d818c5.bindPopup(popup_519bb1c19e154b59818dd8a09b62685c)
+        ;
+
+        
+    
+    
+            marker_2926e7d3215348b98adaa123c1d818c5.bindTooltip(
+                `<div>
+                     Click Here For More Info
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_70c7b9bfdb2b4842aca6c67305e0fb79 = L.marker(
+                [43.6211955, -84.6824346],
+                {}
+            ).addTo(map_713618c5c24a42eb8b894f014f9b2d1f);
+        
+    
+            var icon_5a523a3b3a254189aa9147ab28ff0c3e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "thumbs-up", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_70c7b9bfdb2b4842aca6c67305e0fb79.setIcon(icon_5a523a3b3a254189aa9147ab28ff0c3e);
+        
+    
+        var popup_218e1fe46a1b49d0b5616171bbb01dfa = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8df90abc93fc4b0c85feb523eb6aa5a4 = $(`<div id="html_8df90abc93fc4b0c85feb523eb6aa5a4" style="width: 100.0%; height: 100.0%;"><stong>Michigan</stong><p>Sales:25833.649000000005</p><p>Orders:258</p><p>Profit:8487.761799999998</p></div>`)[0];
+            popup_218e1fe46a1b49d0b5616171bbb01dfa.setContent(html_8df90abc93fc4b0c85feb523eb6aa5a4);
+        
+
+        marker_70c7b9bfdb2b4842aca6c67305e0fb79.bindPopup(popup_218e1fe46a1b49d0b5616171bbb01dfa)
+        ;
+
+        
+    
+    
+            marker_70c7b9bfdb2b4842aca6c67305e0fb79.bindTooltip(
+                `<div>
+                     Click Here For More Info
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_521fff6e52ed45aab3afd02de9a6eb0f = L.marker(
+                [45.9896587, -94.6113288],
+                {}
+            ).addTo(map_713618c5c24a42eb8b894f014f9b2d1f);
+        
+    
+            var icon_510dc986741e453486a1326e6791f734 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "thumbs-up", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_521fff6e52ed45aab3afd02de9a6eb0f.setIcon(icon_510dc986741e453486a1326e6791f734);
+        
+    
+        var popup_31245c5af40d4f08a6aafd9f9f1a5e2e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_88202eccb877461e9c5b637e752503f4 = $(`<div id="html_88202eccb877461e9c5b637e752503f4" style="width: 100.0%; height: 100.0%;"><stong>Minnesota</stong><p>Sales:6728.250000000001</p><p>Orders:138</p><p>Profit:2459.8788999999997</p></div>`)[0];
+            popup_31245c5af40d4f08a6aafd9f9f1a5e2e.setContent(html_88202eccb877461e9c5b637e752503f4);
+        
+
+        marker_521fff6e52ed45aab3afd02de9a6eb0f.bindPopup(popup_31245c5af40d4f08a6aafd9f9f1a5e2e)
+        ;
+
+        
+    
+    
+            marker_521fff6e52ed45aab3afd02de9a6eb0f.bindTooltip(
+                `<div>
+                     Click Here For More Info
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_53b03132fae246eab719b8fbc806ab3f = L.marker(
+                [32.9715285, -89.7348497],
+                {}
+            ).addTo(map_713618c5c24a42eb8b894f014f9b2d1f);
+        
+    
+            var icon_cd2b2139772b4c8980af4a7dd883bc68 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "thumbs-up", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_53b03132fae246eab719b8fbc806ab3f.setIcon(icon_cd2b2139772b4c8980af4a7dd883bc68);
+        
+    
+        var popup_faad0c268053491f9a2a63d7546316d4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1053d2529d354c118b34319411634396 = $(`<div id="html_1053d2529d354c118b34319411634396" style="width: 100.0%; height: 100.0%;"><stong>Mississippi</stong><p>Sales:2997.2399999999993</p><p>Orders:59</p><p>Profit:1028.562</p></div>`)[0];
+            popup_faad0c268053491f9a2a63d7546316d4.setContent(html_1053d2529d354c118b34319411634396);
+        
+
+        marker_53b03132fae246eab719b8fbc806ab3f.bindPopup(popup_faad0c268053491f9a2a63d7546316d4)
+        ;
+
+        
+    
+    
+            marker_53b03132fae246eab719b8fbc806ab3f.bindTooltip(
+                `<div>
+                     Click Here For More Info
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5098340db90f4cc1b882329d9499af7a = L.marker(
+                [38.7604815, -92.5617875],
+                {}
+            ).addTo(map_713618c5c24a42eb8b894f014f9b2d1f);
+        
+    
+            var icon_1b240cc9773645f29fb9a148026c51eb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "thumbs-up", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_5098340db90f4cc1b882329d9499af7a.setIcon(icon_1b240cc9773645f29fb9a148026c51eb);
+        
+    
+        var popup_4a1ff828360f406cbfaf844f06992c2e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_fb0a3447d41249aa9ebbbbca659fe0d6 = $(`<div id="html_fb0a3447d41249aa9ebbbbca659fe0d6" style="width: 100.0%; height: 100.0%;"><stong>Missouri</stong><p>Sales:9350.8</p><p>Orders:113</p><p>Profit:1733.4305000000002</p></div>`)[0];
+            popup_4a1ff828360f406cbfaf844f06992c2e.setContent(html_fb0a3447d41249aa9ebbbbca659fe0d6);
+        
+
+        marker_5098340db90f4cc1b882329d9499af7a.bindPopup(popup_4a1ff828360f406cbfaf844f06992c2e)
+        ;
+
+        
+    
+    
+            marker_5098340db90f4cc1b882329d9499af7a.bindTooltip(
+                `<div>
+                     Click Here For More Info
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_42bee85d55c14f2d8d251501ea18dc48 = L.marker(
+                [47.3752671, -109.638757],
+                {}
+            ).addTo(map_713618c5c24a42eb8b894f014f9b2d1f);
+        
+    
+            var icon_818c7744317a43659e4abbe0f563f48f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "thumbs-up", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_42bee85d55c14f2d8d251501ea18dc48.setIcon(icon_818c7744317a43659e4abbe0f563f48f);
+        
+    
+        var popup_ff1d9c3df7da4f9fa67bf0a076d65a52 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_13f59b43df9f43368e0d2e8ba80a4c54 = $(`<div id="html_13f59b43df9f43368e0d2e8ba80a4c54" style="width: 100.0%; height: 100.0%;"><stong>Montana</stong><p>Sales:4229.279999999999</p><p>Orders:18</p><p>Profit:1465.9254999999998</p></div>`)[0];
+            popup_ff1d9c3df7da4f9fa67bf0a076d65a52.setContent(html_13f59b43df9f43368e0d2e8ba80a4c54);
+        
+
+        marker_42bee85d55c14f2d8d251501ea18dc48.bindPopup(popup_ff1d9c3df7da4f9fa67bf0a076d65a52)
+        ;
+
+        
+    
+    
+            marker_42bee85d55c14f2d8d251501ea18dc48.bindTooltip(
+                `<div>
+                     Click Here For More Info
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b0f7736c95ca4c3ebaf0c2dcdca534e6 = L.marker(
+                [41.7370229, -99.5873816],
+                {}
+            ).addTo(map_713618c5c24a42eb8b894f014f9b2d1f);
+        
+    
+            var icon_b449c7c087024cc8a44c1b40b76f8da9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "thumbs-up", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_b0f7736c95ca4c3ebaf0c2dcdca534e6.setIcon(icon_b449c7c087024cc8a44c1b40b76f8da9);
+        
+    
+        var popup_dd6ee8fca3074141ae7ba19b5f33f06f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2ade5cc1a2ea4a36bc45c94ee10bee77 = $(`<div id="html_2ade5cc1a2ea4a36bc45c94ee10bee77" style="width: 100.0%; height: 100.0%;"><stong>Nebraska</stong><p>Sales:3579.3500000000004</p><p>Orders:31</p><p>Profit:921.0302999999998</p></div>`)[0];
+            popup_dd6ee8fca3074141ae7ba19b5f33f06f.setContent(html_2ade5cc1a2ea4a36bc45c94ee10bee77);
+        
+
+        marker_b0f7736c95ca4c3ebaf0c2dcdca534e6.bindPopup(popup_dd6ee8fca3074141ae7ba19b5f33f06f)
+        ;
+
+        
+    
+    
+            marker_b0f7736c95ca4c3ebaf0c2dcdca534e6.bindTooltip(
+                `<div>
+                     Click Here For More Info
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_21a91bf56f70429a9aef67e9813daf1e = L.marker(
+                [39.5158825, -116.8537227],
+                {}
+            ).addTo(map_713618c5c24a42eb8b894f014f9b2d1f);
+        
+    
+            var icon_e263bab29ae84162b96262c289f3200e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "thumbs-up", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_21a91bf56f70429a9aef67e9813daf1e.setIcon(icon_e263bab29ae84162b96262c289f3200e);
+        
+    
+        var popup_a35ae295645a46319bef6714d36eb761 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1e9ce410b9f3491c85b4f4b7a4491f9b = $(`<div id="html_1e9ce410b9f3491c85b4f4b7a4491f9b" style="width: 100.0%; height: 100.0%;"><stong>Nevada</stong><p>Sales:3138.158</p><p>Orders:28</p><p>Profit:305.1946999999997</p></div>`)[0];
+            popup_a35ae295645a46319bef6714d36eb761.setContent(html_1e9ce410b9f3491c85b4f4b7a4491f9b);
+        
+
+        marker_21a91bf56f70429a9aef67e9813daf1e.bindPopup(popup_a35ae295645a46319bef6714d36eb761)
+        ;
+
+        
+    
+    
+            marker_21a91bf56f70429a9aef67e9813daf1e.bindTooltip(
+                `<div>
+                     Click Here For More Info
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a3fc078694b4475aa77379a00b683dbb = L.marker(
+                [43.4849133, -71.6553992],
+                {}
+            ).addTo(map_713618c5c24a42eb8b894f014f9b2d1f);
+        
+    
+            var icon_fe4b8425f3e94fd9bdffa11bff8966ca = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "thumbs-up", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_a3fc078694b4475aa77379a00b683dbb.setIcon(icon_fe4b8425f3e94fd9bdffa11bff8966ca);
+        
+    
+        var popup_fc65df15a8dd49ad90f6e8552e787514 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c91c2ad7ef344d2cb7fa5b0163e818bb = $(`<div id="html_c91c2ad7ef344d2cb7fa5b0163e818bb" style="width: 100.0%; height: 100.0%;"><stong>New Hampshire</stong><p>Sales:1509.43</p><p>Orders:39</p><p>Profit:480.21399999999994</p></div>`)[0];
+            popup_fc65df15a8dd49ad90f6e8552e787514.setContent(html_c91c2ad7ef344d2cb7fa5b0163e818bb);
+        
+
+        marker_a3fc078694b4475aa77379a00b683dbb.bindPopup(popup_fc65df15a8dd49ad90f6e8552e787514)
+        ;
+
+        
+    
+    
+            marker_a3fc078694b4475aa77379a00b683dbb.bindTooltip(
+                `<div>
+                     Click Here For More Info
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7865a1f5b2ba4bd2a2fe0e3157e5bb7b = L.marker(
+                [40.0757384, -74.4041622],
+                {}
+            ).addTo(map_713618c5c24a42eb8b894f014f9b2d1f);
+        
+    
+            var icon_cbe3da44cb9947d19ecc0ec5d9ac75e9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "thumbs-up", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_7865a1f5b2ba4bd2a2fe0e3157e5bb7b.setIcon(icon_cbe3da44cb9947d19ecc0ec5d9ac75e9);
+        
+    
+        var popup_970f7bf9159b4736b53de98d4cd2dee9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5c237e526b9b463dbf84fa4305e77d1f = $(`<div id="html_5c237e526b9b463dbf84fa4305e77d1f" style="width: 100.0%; height: 100.0%;"><stong>New Jersey</stong><p>Sales:9483.550000000001</p><p>Orders:140</p><p>Profit:2266.0706999999993</p></div>`)[0];
+            popup_970f7bf9159b4736b53de98d4cd2dee9.setContent(html_5c237e526b9b463dbf84fa4305e77d1f);
+        
+
+        marker_7865a1f5b2ba4bd2a2fe0e3157e5bb7b.bindPopup(popup_970f7bf9159b4736b53de98d4cd2dee9)
+        ;
+
+        
+    
+    
+            marker_7865a1f5b2ba4bd2a2fe0e3157e5bb7b.bindTooltip(
+                `<div>
+                     Click Here For More Info
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e1e15ba8f796467a8946608206add58e = L.marker(
+                [34.5708167, -105.993007],
+                {}
+            ).addTo(map_713618c5c24a42eb8b894f014f9b2d1f);
+        
+    
+            var icon_b6815a60f35e4cffac758cb2181b569f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "thumbs-up", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_e1e15ba8f796467a8946608206add58e.setIcon(icon_b6815a60f35e4cffac758cb2181b569f);
+        
+    
+        var popup_81acc293b9d140799ef8ca3c2bb4a28f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_55c81de6bdaa4425b25fd53d012edde5 = $(`<div id="html_55c81de6bdaa4425b25fd53d012edde5" style="width: 100.0%; height: 100.0%;"><stong>New Mexico</stong><p>Sales:2818.558</p><p>Orders:98</p><p>Profit:827.3904000000001</p></div>`)[0];
+            popup_81acc293b9d140799ef8ca3c2bb4a28f.setContent(html_55c81de6bdaa4425b25fd53d012edde5);
+        
+
+        marker_e1e15ba8f796467a8946608206add58e.bindPopup(popup_81acc293b9d140799ef8ca3c2bb4a28f)
+        ;
+
+        
+    
+    
+            marker_e1e15ba8f796467a8946608206add58e.bindTooltip(
+                `<div>
+                     Click Here For More Info
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_385d9ec4cf064dc0b6ddff6fc70fd7fe = L.marker(
+                [40.7127281, -74.0060152],
+                {}
+            ).addTo(map_713618c5c24a42eb8b894f014f9b2d1f);
+        
+    
+            var icon_9cafc1d5108049389953c77fec95b1ac = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "thumbs-up", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_385d9ec4cf064dc0b6ddff6fc70fd7fe.setIcon(icon_9cafc1d5108049389953c77fec95b1ac);
+        
+    
+        var popup_7bf29cd8ecf44fab89b2ac93f62b631f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_dc05df08043b49eda615636d24e089bd = $(`<div id="html_dc05df08043b49eda615636d24e089bd" style="width: 100.0%; height: 100.0%;"><stong>New York</stong><p>Sales:93922.995</p><p>Orders:1319</p><p>Profit:24357.071699999997</p></div>`)[0];
+            popup_7bf29cd8ecf44fab89b2ac93f62b631f.setContent(html_dc05df08043b49eda615636d24e089bd);
+        
+
+        marker_385d9ec4cf064dc0b6ddff6fc70fd7fe.bindPopup(popup_7bf29cd8ecf44fab89b2ac93f62b631f)
+        ;
+
+        
+    
+    
+            marker_385d9ec4cf064dc0b6ddff6fc70fd7fe.bindTooltip(
+                `<div>
+                     Click Here For More Info
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a8de224205ad4a86b86213c4f20a34fc = L.marker(
+                [35.6729639, -79.0392919],
+                {}
+            ).addTo(map_713618c5c24a42eb8b894f014f9b2d1f);
+        
+    
+            var icon_b35186b64bbf48f192d5a16dd1534af8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "thumbs-down", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_a8de224205ad4a86b86213c4f20a34fc.setIcon(icon_b35186b64bbf48f192d5a16dd1534af8);
+        
+    
+        var popup_7bf9f941990441c896336e9ef73b52d9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_64cc9112494148e2938828c1b8fda844 = $(`<div id="html_64cc9112494148e2938828c1b8fda844" style="width: 100.0%; height: 100.0%;"><stong>North Carolina</stong><p>Sales:23456.828999999998</p><p>Orders:335</p><p>Loss:-5088.533399999998</p></div>`)[0];
+            popup_7bf9f941990441c896336e9ef73b52d9.setContent(html_64cc9112494148e2938828c1b8fda844);
+        
+
+        marker_a8de224205ad4a86b86213c4f20a34fc.bindPopup(popup_7bf9f941990441c896336e9ef73b52d9)
+        ;
+
+        
+    
+    
+            marker_a8de224205ad4a86b86213c4f20a34fc.bindTooltip(
+                `<div>
+                     Click Here For More Info
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_cf7a278c025f495fa77084e3ee9a731e = L.marker(
+                [47.6201461, -100.540737],
+                {}
+            ).addTo(map_713618c5c24a42eb8b894f014f9b2d1f);
+        
+    
+            var icon_9c8a347dc7144763a61e7ae219aa4f6b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "thumbs-up", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_cf7a278c025f495fa77084e3ee9a731e.setIcon(icon_9c8a347dc7144763a61e7ae219aa4f6b);
+        
+    
+        var popup_23d6cd9016b44f55a3c16d9aaa46f236 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_402abbf1530b4dd38eff3b92514752ae = $(`<div id="html_402abbf1530b4dd38eff3b92514752ae" style="width: 100.0%; height: 100.0%;"><stong>North Dakota</stong><p>Sales:919.91</p><p>Orders:30</p><p>Profit:230.14969999999997</p></div>`)[0];
+            popup_23d6cd9016b44f55a3c16d9aaa46f236.setContent(html_402abbf1530b4dd38eff3b92514752ae);
+        
+
+        marker_cf7a278c025f495fa77084e3ee9a731e.bindPopup(popup_23d6cd9016b44f55a3c16d9aaa46f236)
+        ;
+
+        
+    
+    
+            marker_cf7a278c025f495fa77084e3ee9a731e.bindTooltip(
+                `<div>
+                     Click Here For More Info
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1f7a6736584c4385a43c72912e57ac8c = L.marker(
+                [40.2253569, -82.6881395],
+                {}
+            ).addTo(map_713618c5c24a42eb8b894f014f9b2d1f);
+        
+    
+            var icon_cd0747f93ecb454bbc75491fdf76f800 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "thumbs-down", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_1f7a6736584c4385a43c72912e57ac8c.setIcon(icon_cd0747f93ecb454bbc75491fdf76f800);
+        
+    
+        var popup_effa1d2314fe4bb8905c3fa380fc4622 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_119a42a896714bfe9c761fffd1318e29 = $(`<div id="html_119a42a896714bfe9c761fffd1318e29" style="width: 100.0%; height: 100.0%;"><stong>Ohio</stong><p>Sales:23264.850000000006</p><p>Orders:603</p><p>Loss:-1736.5270000000005</p></div>`)[0];
+            popup_effa1d2314fe4bb8905c3fa380fc4622.setContent(html_119a42a896714bfe9c761fffd1318e29);
+        
+
+        marker_1f7a6736584c4385a43c72912e57ac8c.bindPopup(popup_effa1d2314fe4bb8905c3fa380fc4622)
+        ;
+
+        
+    
+    
+            marker_1f7a6736584c4385a43c72912e57ac8c.bindTooltip(
+                `<div>
+                     Click Here For More Info
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3ffd08b6430046c6a2542cc687c7cdf4 = L.marker(
+                [34.9550817, -97.2684063],
+                {}
+            ).addTo(map_713618c5c24a42eb8b894f014f9b2d1f);
+        
+    
+            var icon_fd4477d3c45b412481afa5fef805913b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "thumbs-up", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_3ffd08b6430046c6a2542cc687c7cdf4.setIcon(icon_fd4477d3c45b412481afa5fef805913b);
+        
+    
+        var popup_95e5850883094b1481b240cb7c2fbd7b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9d3f00c3cd0648ccb16de9af834ce9e1 = $(`<div id="html_9d3f00c3cd0648ccb16de9af834ce9e1" style="width: 100.0%; height: 100.0%;"><stong>Oklahoma</stong><p>Sales:6225.91</p><p>Orders:64</p><p>Profit:1754.7516</p></div>`)[0];
+            popup_95e5850883094b1481b240cb7c2fbd7b.setContent(html_9d3f00c3cd0648ccb16de9af834ce9e1);
+        
+
+        marker_3ffd08b6430046c6a2542cc687c7cdf4.bindPopup(popup_95e5850883094b1481b240cb7c2fbd7b)
+        ;
+
+        
+    
+    
+            marker_3ffd08b6430046c6a2542cc687c7cdf4.bindTooltip(
+                `<div>
+                     Click Here For More Info
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_69d0ac60f40b4891927ed9f3f1624c01 = L.marker(
+                [43.9792797, -120.737257],
+                {}
+            ).addTo(map_713618c5c24a42eb8b894f014f9b2d1f);
+        
+    
+            var icon_a592cd71b9f6451d952d2155e656642c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "thumbs-down", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_69d0ac60f40b4891927ed9f3f1624c01.setIcon(icon_a592cd71b9f6451d952d2155e656642c);
+        
+    
+        var popup_5885f6ff725745139029c0b6f850d2ef = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e95f9b51006749628fd662caa936ca13 = $(`<div id="html_e95f9b51006749628fd662caa936ca13" style="width: 100.0%; height: 100.0%;"><stong>Oregon</stong><p>Sales:2886.5930000000003</p><p>Orders:109</p><p>Loss:-377.12570000000005</p></div>`)[0];
+            popup_5885f6ff725745139029c0b6f850d2ef.setContent(html_e95f9b51006749628fd662caa936ca13);
+        
+
+        marker_69d0ac60f40b4891927ed9f3f1624c01.bindPopup(popup_5885f6ff725745139029c0b6f850d2ef)
+        ;
+
+        
+    
+    
+            marker_69d0ac60f40b4891927ed9f3f1624c01.bindTooltip(
+                `<div>
+                     Click Here For More Info
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e4cd5ba0f8d44167884f035298cd6165 = L.marker(
+                [40.9699889, -77.7278831],
+                {}
+            ).addTo(map_713618c5c24a42eb8b894f014f9b2d1f);
+        
+    
+            var icon_6cb5e683b6024ee58fd9ef7b7e1160ab = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "thumbs-down", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_e4cd5ba0f8d44167884f035298cd6165.setIcon(icon_6cb5e683b6024ee58fd9ef7b7e1160ab);
+        
+    
+        var popup_46d43e971a724c789a5b0a6b1f778a4a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a9cef04a10364758b0393ddcfc64f15f = $(`<div id="html_a9cef04a10364758b0393ddcfc64f15f" style="width: 100.0%; height: 100.0%;"><stong>Pennsylvania</stong><p>Sales:42688.306</p><p>Orders:713</p><p>Loss:-5112.803400000001</p></div>`)[0];
+            popup_46d43e971a724c789a5b0a6b1f778a4a.setContent(html_a9cef04a10364758b0393ddcfc64f15f);
+        
+
+        marker_e4cd5ba0f8d44167884f035298cd6165.bindPopup(popup_46d43e971a724c789a5b0a6b1f778a4a)
+        ;
+
+        
+    
+    
+            marker_e4cd5ba0f8d44167884f035298cd6165.bindTooltip(
+                `<div>
+                     Click Here For More Info
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_25fe6a22bcdf47479330b62e0f61f3af = L.marker(
+                [41.7962409, -71.5992372],
+                {}
+            ).addTo(map_713618c5c24a42eb8b894f014f9b2d1f);
+        
+    
+            var icon_62577c122fe74d89830924975c2a2b6b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "thumbs-up", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_25fe6a22bcdf47479330b62e0f61f3af.setIcon(icon_62577c122fe74d89830924975c2a2b6b);
+        
+    
+        var popup_2fe618e5fdd040c8893ffc2ee217b5d6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9f299cb917d14414b6d63050dea9a300 = $(`<div id="html_9f299cb917d14414b6d63050dea9a300" style="width: 100.0%; height: 100.0%;"><stong>Rhode Island</stong><p>Sales:3427.1100000000006</p><p>Orders:75</p><p>Profit:467.41350000000006</p></div>`)[0];
+            popup_2fe618e5fdd040c8893ffc2ee217b5d6.setContent(html_9f299cb917d14414b6d63050dea9a300);
+        
+
+        marker_25fe6a22bcdf47479330b62e0f61f3af.bindPopup(popup_2fe618e5fdd040c8893ffc2ee217b5d6)
+        ;
+
+        
+    
+    
+            marker_25fe6a22bcdf47479330b62e0f61f3af.bindTooltip(
+                `<div>
+                     Click Here For More Info
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_feda1d4342514b089ac4e2834a77c524 = L.marker(
+                [33.6874388, -80.4363743],
+                {}
+            ).addTo(map_713618c5c24a42eb8b894f014f9b2d1f);
+        
+    
+            var icon_f4b70120d4f34f31bafab5c2a3b22100 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "thumbs-up", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_feda1d4342514b089ac4e2834a77c524.setIcon(icon_f4b70120d4f34f31bafab5c2a3b22100);
+        
+    
+        var popup_8a2fd0d2a92b494d9f44a876fdf52ba7 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e51d94d73ddc493b8177e25932d0385f = $(`<div id="html_e51d94d73ddc493b8177e25932d0385f" style="width: 100.0%; height: 100.0%;"><stong>South Carolina</stong><p>Sales:1560.75</p><p>Orders:35</p><p>Profit:294.63749999999993</p></div>`)[0];
+            popup_8a2fd0d2a92b494d9f44a876fdf52ba7.setContent(html_e51d94d73ddc493b8177e25932d0385f);
+        
+
+        marker_feda1d4342514b089ac4e2834a77c524.bindPopup(popup_8a2fd0d2a92b494d9f44a876fdf52ba7)
+        ;
+
+        
+    
+    
+            marker_feda1d4342514b089ac4e2834a77c524.bindTooltip(
+                `<div>
+                     Click Here For More Info
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_aaff80216d9b4fa8b5ac22266985c85b = L.marker(
+                [44.6471761, -100.348761],
+                {}
+            ).addTo(map_713618c5c24a42eb8b894f014f9b2d1f);
+        
+    
+            var icon_616529d068a74952ada0fc38c665bf88 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "thumbs-up", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_aaff80216d9b4fa8b5ac22266985c85b.setIcon(icon_616529d068a74952ada0fc38c665bf88);
+        
+    
+        var popup_49feab8f45d049cba696df5a89f972ee = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e98bbe269ea246fe9b71f5d1bfe5a641 = $(`<div id="html_e98bbe269ea246fe9b71f5d1bfe5a641" style="width: 100.0%; height: 100.0%;"><stong>South Dakota</stong><p>Sales:1153.4099999999999</p><p>Orders:32</p><p>Profit:346.0717</p></div>`)[0];
+            popup_49feab8f45d049cba696df5a89f972ee.setContent(html_e98bbe269ea246fe9b71f5d1bfe5a641);
+        
+
+        marker_aaff80216d9b4fa8b5ac22266985c85b.bindPopup(popup_49feab8f45d049cba696df5a89f972ee)
+        ;
+
+        
+    
+    
+            marker_aaff80216d9b4fa8b5ac22266985c85b.bindTooltip(
+                `<div>
+                     Click Here For More Info
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d26cabbec9684712bb71f02c4d77806e = L.marker(
+                [35.7730076, -86.2820081],
+                {}
+            ).addTo(map_713618c5c24a42eb8b894f014f9b2d1f);
+        
+    
+            var icon_76f10e77c2564c3fadff6b5ae5ba0d91 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "thumbs-down", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_d26cabbec9684712bb71f02c4d77806e.setIcon(icon_76f10e77c2564c3fadff6b5ae5ba0d91);
+        
+    
+        var popup_22a7da7854bd49d18b108bb9b0b55ba8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_210b005776f54d54a4a56ba96e4d19c7 = $(`<div id="html_210b005776f54d54a4a56ba96e4d19c7" style="width: 100.0%; height: 100.0%;"><stong>Tennessee</stong><p>Sales:16113.823000000002</p><p>Orders:304</p><p>Loss:-3304.2866</p></div>`)[0];
+            popup_22a7da7854bd49d18b108bb9b0b55ba8.setContent(html_210b005776f54d54a4a56ba96e4d19c7);
+        
+
+        marker_d26cabbec9684712bb71f02c4d77806e.bindPopup(popup_22a7da7854bd49d18b108bb9b0b55ba8)
+        ;
+
+        
+    
+    
+            marker_d26cabbec9684712bb71f02c4d77806e.bindTooltip(
+                `<div>
+                     Click Here For More Info
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1f24465177cf45328e83c48d1a91ee18 = L.marker(
+                [31.8160381, -99.5120986],
+                {}
+            ).addTo(map_713618c5c24a42eb8b894f014f9b2d1f);
+        
+    
+            var icon_6ecf537d91ab4fa9adbe8f189e018353 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "thumbs-down", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_1f24465177cf45328e83c48d1a91ee18.setIcon(icon_6ecf537d91ab4fa9adbe8f189e018353);
+        
+    
+        var popup_f6c4bcd3c3074781b3dad8b56529379d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b86948f0393941fd82bffeb7674733a0 = $(`<div id="html_b86948f0393941fd82bffeb7674733a0" style="width: 100.0%; height: 100.0%;"><stong>Texas</stong><p>Sales:43421.7582</p><p>Orders:1158</p><p>Loss:-8838.5049</p></div>`)[0];
+            popup_f6c4bcd3c3074781b3dad8b56529379d.setContent(html_b86948f0393941fd82bffeb7674733a0);
+        
+
+        marker_1f24465177cf45328e83c48d1a91ee18.bindPopup(popup_f6c4bcd3c3074781b3dad8b56529379d)
+        ;
+
+        
+    
+    
+            marker_1f24465177cf45328e83c48d1a91ee18.bindTooltip(
+                `<div>
+                     Click Here For More Info
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e380f535203b4780b94a10beb4d09c69 = L.marker(
+                [39.4225192, -111.714358],
+                {}
+            ).addTo(map_713618c5c24a42eb8b894f014f9b2d1f);
+        
+    
+            var icon_3bdebf03e2a140d3a24fb22a18bd979b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "thumbs-up", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_e380f535203b4780b94a10beb4d09c69.setIcon(icon_3bdebf03e2a140d3a24fb22a18bd979b);
+        
+    
+        var popup_ba3d17b60c25459fa3e778beaa0da15f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_519e4b072dbe404d9b51c02a3818e68f = $(`<div id="html_519e4b072dbe404d9b51c02a3818e68f" style="width: 100.0%; height: 100.0%;"><stong>Utah</stong><p>Sales:2460.6379999999995</p><p>Orders:54</p><p>Profit:477.1746999999999</p></div>`)[0];
+            popup_ba3d17b60c25459fa3e778beaa0da15f.setContent(html_519e4b072dbe404d9b51c02a3818e68f);
+        
+
+        marker_e380f535203b4780b94a10beb4d09c69.bindPopup(popup_ba3d17b60c25459fa3e778beaa0da15f)
+        ;
+
+        
+    
+    
+            marker_e380f535203b4780b94a10beb4d09c69.bindTooltip(
+                `<div>
+                     Click Here For More Info
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a4ff6cd8fdb544f5b51968e6241ef40c = L.marker(
+                [44.5990718, -72.5002608],
+                {}
+            ).addTo(map_713618c5c24a42eb8b894f014f9b2d1f);
+        
+    
+            var icon_a856c73f833c4c559aa2f2eadbcb2deb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "thumbs-up", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_a4ff6cd8fdb544f5b51968e6241ef40c.setIcon(icon_a856c73f833c4c559aa2f2eadbcb2deb);
+        
+    
+        var popup_cfdc18db546d45eaba605b413753809f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4a281b6bf8184c788841ccb59fe4f8d4 = $(`<div id="html_4a281b6bf8184c788841ccb59fe4f8d4" style="width: 100.0%; height: 100.0%;"><stong>Vermont</stong><p>Sales:842.2099999999998</p><p>Orders:16</p><p>Profit:263.97589999999997</p></div>`)[0];
+            popup_cfdc18db546d45eaba605b413753809f.setContent(html_4a281b6bf8184c788841ccb59fe4f8d4);
+        
+
+        marker_a4ff6cd8fdb544f5b51968e6241ef40c.bindPopup(popup_cfdc18db546d45eaba605b413753809f)
+        ;
+
+        
+    
+    
+            marker_a4ff6cd8fdb544f5b51968e6241ef40c.bindTooltip(
+                `<div>
+                     Click Here For More Info
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9a5f62949ba24079844bb36d4f022d33 = L.marker(
+                [37.1232245, -78.4927721],
+                {}
+            ).addTo(map_713618c5c24a42eb8b894f014f9b2d1f);
+        
+    
+            var icon_15de1410c484458284f9971de045410c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "thumbs-up", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_9a5f62949ba24079844bb36d4f022d33.setIcon(icon_15de1410c484458284f9971de045410c);
+        
+    
+        var popup_05ed10f5c717434bb94889043654174f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8fb228f5bd794105a0ec7fa5d4e68b74 = $(`<div id="html_8fb228f5bd794105a0ec7fa5d4e68b74" style="width: 100.0%; height: 100.0%;"><stong>Virginia</stong><p>Sales:7600.200000000001</p><p>Orders:162</p><p>Profit:1806.0145999999997</p></div>`)[0];
+            popup_05ed10f5c717434bb94889043654174f.setContent(html_8fb228f5bd794105a0ec7fa5d4e68b74);
+        
+
+        marker_9a5f62949ba24079844bb36d4f022d33.bindPopup(popup_05ed10f5c717434bb94889043654174f)
+        ;
+
+        
+    
+    
+            marker_9a5f62949ba24079844bb36d4f022d33.bindTooltip(
+                `<div>
+                     Click Here For More Info
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a0ed9d26646741dd9c9c57cc16735284 = L.marker(
+                [38.8950368, -77.0365427],
+                {}
+            ).addTo(map_713618c5c24a42eb8b894f014f9b2d1f);
+        
+    
+            var icon_017bf1b98c404cecb27f2a99292be994 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "thumbs-up", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_a0ed9d26646741dd9c9c57cc16735284.setIcon(icon_017bf1b98c404cecb27f2a99292be994);
+        
+    
+        var popup_f846795e0aff4520aa633f3b560c1686 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8b4928c6afd149d7851fb35cf073a075 = $(`<div id="html_8b4928c6afd149d7851fb35cf073a075" style="width: 100.0%; height: 100.0%;"><stong>Washington</stong><p>Sales:65539.896</p><p>Orders:806</p><p>Profit:17256.7798</p></div>`)[0];
+            popup_f846795e0aff4520aa633f3b560c1686.setContent(html_8b4928c6afd149d7851fb35cf073a075);
+        
+
+        marker_a0ed9d26646741dd9c9c57cc16735284.bindPopup(popup_f846795e0aff4520aa633f3b560c1686)
+        ;
+
+        
+    
+    
+            marker_a0ed9d26646741dd9c9c57cc16735284.bindTooltip(
+                `<div>
+                     Click Here For More Info
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f9f4ab7d0efe471385c0260271d1baff = L.marker(
+                [38.4758406, -80.8408415],
+                {}
+            ).addTo(map_713618c5c24a42eb8b894f014f9b2d1f);
+        
+    
+            var icon_a33f8b2c895b4810a6b560be92489c5f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "thumbs-up", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_f9f4ab7d0efe471385c0260271d1baff.setIcon(icon_a33f8b2c895b4810a6b560be92489c5f);
+        
+    
+        var popup_a06588a8f05f44998b4921462c2b9753 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_bc12cb1124804790ac8be2988332eeb1 = $(`<div id="html_bc12cb1124804790ac8be2988332eeb1" style="width: 100.0%; height: 100.0%;"><stong>West Virginia</stong><p>Sales:1209.824</p><p>Orders:18</p><p>Profit:185.92159999999996</p></div>`)[0];
+            popup_a06588a8f05f44998b4921462c2b9753.setContent(html_bc12cb1124804790ac8be2988332eeb1);
+        
+
+        marker_f9f4ab7d0efe471385c0260271d1baff.bindPopup(popup_a06588a8f05f44998b4921462c2b9753)
+        ;
+
+        
+    
+    
+            marker_f9f4ab7d0efe471385c0260271d1baff.bindTooltip(
+                `<div>
+                     Click Here For More Info
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4814732e98e749a9a12e838bccd1a8cb = L.marker(
+                [44.4308975, -89.6884637],
+                {}
+            ).addTo(map_713618c5c24a42eb8b894f014f9b2d1f);
+        
+    
+            var icon_a83509a1c6b4470ba97ad24ded4a3c3e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "thumbs-up", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_4814732e98e749a9a12e838bccd1a8cb.setIcon(icon_a83509a1c6b4470ba97ad24ded4a3c3e);
+        
+    
+        var popup_119ba8223e0b49259ebbf03291f5ce08 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_709da0d9082645faabe73e2d73b44ba3 = $(`<div id="html_709da0d9082645faabe73e2d73b44ba3" style="width: 100.0%; height: 100.0%;"><stong>Wisconsin</stong><p>Sales:5567.47</p><p>Orders:125</p><p>Profit:1523.0807</p></div>`)[0];
+            popup_119ba8223e0b49259ebbf03291f5ce08.setContent(html_709da0d9082645faabe73e2d73b44ba3);
+        
+
+        marker_4814732e98e749a9a12e838bccd1a8cb.bindPopup(popup_119ba8223e0b49259ebbf03291f5ce08)
+        ;
+
+        
+    
+    
+            marker_4814732e98e749a9a12e838bccd1a8cb.bindTooltip(
+                `<div>
+                     Click Here For More Info
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
